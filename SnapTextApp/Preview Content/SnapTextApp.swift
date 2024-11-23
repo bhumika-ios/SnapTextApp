@@ -51,12 +51,6 @@ struct SnapTextApp: View {
                             }) {
                                 Image(systemName: "square.on.square")
                                 Text("Copy Text")
-                                   
-                                //                    .foregroundColor(.white)
-                                //                    .padding()
-                                //                    .frame(maxWidth: .infinity)
-                                //                    .background(Color.blue)
-                                //                    .cornerRadius(8)
                             }
                         }
                         .offset(y:-10)
@@ -73,23 +67,7 @@ struct SnapTextApp: View {
                 }
             }
             .padding()
-
-            // Copy to Clipboard Button
-//            Button(action: {
-//                UIPasteboard.general.string = extractedText
-//            }) {
-//                Image(systemName: "square.on.square")
-//                Text("Copy Text")
-//                    .font(.caption)
-////                    .foregroundColor(.white)
-////                    .padding()
-////                    .frame(maxWidth: .infinity)
-////                    .background(Color.blue)
-////                    .cornerRadius(8)
-//            }
             .padding()
-
-//            Spacer()
         }
         .padding()
         .sheet(isPresented: $isImagePickerPresented) {
